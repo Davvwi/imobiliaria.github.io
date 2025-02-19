@@ -9,29 +9,26 @@ body {
 .cont {
     background-color: RGB(176, 221, 252);
     padding: 10px;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
     #logo {
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         height: auto;
     }
 
-    #lista {
+    #lista ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
+        gap: 15px;
     }
 }
 
@@ -45,13 +42,15 @@ body {
     text-align: center;
 
     #img01{
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         height: auto;
         text-align: center;
     }
 
     h1{
-        margin-top: 40px;
+        margin-top: 20px;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -63,7 +62,8 @@ body {
     }
 
     #escala{
-        width: 600px;
+        width: 90%;
+        max-width: 600px;
         text-align: justify;
 
         #span01 {
@@ -80,9 +80,10 @@ body {
     }
     
     #img02{
-        width: 400px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 400px;
         height: auto;
-        text-align: center;
     }
 }
 
@@ -90,16 +91,14 @@ body {
     background-color: RGB(29, 128, 193);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: white;
-    height: 50vh;
 
     p {
-        width: 500px;
+        width: 90%;
+        max-width: 500px;
         margin-top: -5px;
         margin-bottom: 25px;
 
@@ -122,16 +121,15 @@ body {
 #corretores {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 
     #img03{
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         height: auto;
-        text-align: center;
+        margin-top: 20px;
     }
 
     span {
@@ -139,7 +137,8 @@ body {
     }
 
     p {
-        width: 700px;
+        width: 90%;
+        max-width: 700px;
         text-align: justify;
     }
 }
@@ -149,14 +148,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    justify-content: center;
-    height: 80vh;
-    
     
     h1{
         color: white;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        margin-top: 20px;
     }
 
     #paragrafo{
@@ -164,40 +167,26 @@ body {
         background-color: rgb(33, 33, 33);
         border-radius: 10px;
         margin-top: 20px;
-        
-        p{
-            margin: 0;
-            padding: 10px;
-        }
+        padding: 10px;
+        width: 90%;
+        max-width: 600px;
     }    
 
     #esc{
         color: RGB(29, 128, 193);
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
 
-        #esc01 {
+        div {
             background-color: white;
             margin: 5px;
-            padding: 5px;
+            padding: 10px;
             border-radius: 8px;
-            width: auto;
-        }
-
-        #esc02 {
-            background-color: white;
-            margin: 5px;
-            padding: 5px;
-            border-radius: 8px;
-            width: auto;
-        }
-
-        #esc03 {
-            background-color: white;
-            margin: 5px;
-            padding: 5px;
-            border-radius: 8px;
-            width: auto;
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
         }
     }
-
 }
